@@ -1,0 +1,49 @@
+
+http://localhost:5000/api/user/register
+
+{
+    "name":"sanjib",
+    "email":"sanjib@gmail.com",
+    "password":"password",
+    "role":"admin"
+}
+
+user
+suman@gmail.com
+suman
+
+Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZGRiMzU4M2VjOGUxMGNmNDRjYmQ5OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3NTQ3Mzc1MiwiZXhwIjoxNjc4MDY1NzUyfQ.nIpF4pHv9QXlZ7yFzml_HBYFFAYKJul--Tj_KZ7Z0k
+
+
+http://localhost:5000/api/user/login
+
+{
+    "email":"sanjib@gmail.com",
+    "password":"password"
+}
+
+Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZGRiMzU4M2VjOGUxMGNmNDRjYmQ5OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3NTQ3NDEwNCwiZXhwIjoxNjc4MDY2MTA0fQ.OsXERMQh8y7IlwBFbrvJATjx78ipcK0OLON6Lwgi-zo
+
+
+http://localhost:5000/api/student/register
+{
+	"student_name":"Paliwal",
+	"fathers_name":"Paliwal F",	
+	"mothers_name":"Paliwal M",
+	"email":"Paliwal@gmail.com",
+	"phone_number":"8764523987",
+	"address":{"state":"Assam","district":"Kamrup","location":"Saru Patha","pinCode":781367},
+	"class_details":{"session":"2022-23","class_name":"XI","section":"KJ"}
+}
+
+http://localhost:5000/api/exam/add
+
+{
+    "exam_session":"2022-23",
+    "exam_type":"mid-term",
+    "class_name":"X",
+    "subject":"Assamese",
+    "marks":[{"student_id":"63ddbbfd94c98780a31d2637", "marks":60}]
+}
